@@ -1,54 +1,31 @@
-![](https://github.com/xyflow/web/blob/main/assets/codesandbox-header-ts.png?raw=true)
+# DynamicModuleTest
 
-# React Flow starter (Vite + TS)
+DynamicModuleTest is just a basic project to see if I can dynamically load components into a [ReactFlow](https://reactflow.dev/) graph from a directory.
 
-We've put together this template to serve as a starting point for folks
-interested in React Flow. You can use this both as a base for your own React
-Flow applications, or for small experiments or bug reports.
+## Project Structure
 
-**TypeScript not your thing?** We also have a vanilla JavaScript starter template,
-just for you!
+Everything is under `src`, following the usual web project layout.
 
-## Getting up and running
+### `App.tsx`
 
-You can get this template without forking/cloning the repo using `degit`:
+Just contains a basic [ReactFlow](https://reactflow.dev/) graph and the `ComponentGallery.tsx` component.
 
-```bash
-npx degit xyflow/vite-react-flow-template your-app-name
-```
+### `useComponentList.tsx`
 
-The template contains mostly the minimum dependencies to get up and running, but
-also includes eslint and some additional rules to help you write React code that
-is less likely to run into issues:
+Handles importing all components from `nodedirectory`.
 
-```bash
-npm install # or `pnpm install` or `yarn install`
-```
+### `ComponentGallery.tsx`
 
-Vite is a great development server and build tool that we recommend our users to
-use. You can start a development server with:
+Maps each imported component to an entry with an "Add to Graph" button.
 
-```bash
-npm run dev
-```
+### `useFlowComponents.tsx`
 
-While the development server is running, changes you make to the code will be
-automatically reflected in the browser!
+Similar to `useComponentList.tsx`, but returns it in the `{ [componentName]: componentReference }` format used by ReactFlow to map custom nodes properly.
 
-## Things to try:
+### `nodedirectory`
 
-- Create a new custom node inside `src/nodes/` (don't forget to export it from `src/nodes/index.ts`).
-- Change how things look by [overriding some of the built-in classes](https://reactflow.dev/learn/customization/theming#overriding-built-in-classes).
-- Add a layouting library to [position your nodes automatically](https://reactflow.dev/learn/layouting/layouting)
+This is where all the components that get dynamically loaded into the ReactFlow graph are stored.
 
-## Resources
+## Project Goal
 
-Links:
-
-- [React Flow - Docs](https://reactflow.dev)
-- [React Flow - Discord](https://discord.com/invite/Bqt6xrs)
-
-Learn:
-
-- [React Flow – Custom Nodes](https://reactflow.dev/learn/customization/custom-nodes)
-- [React Flow – Layouting](https://reactflow.dev/learn/layouting/layouting)
+Just wanted to test out whether I could dynamically define and import components from `nodedirectory` into a ReactFlow graph without hardcoding them.
