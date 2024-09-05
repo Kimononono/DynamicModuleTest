@@ -689,19 +689,19 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.14.2"
 
-"@xyflow/react@^12.0.3":
-  version "12.0.4"
-  resolved "https://registry.yarnpkg.com/@xyflow/react/-/react-12.0.4.tgz#e3502ed7430e58f5f0c51437dad98e4d33684897"
-  integrity sha512-eeQzw1gIbLKOB55rp2+20uB1PASDUf1q6zy2VsgugnuPEcL/olVMX3WT42XxyG8m3rcbUiHlq2NSmPTFWEjiUQ==
+"@xyflow/react@^12.2.1":
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/@xyflow/react/-/react-12.2.1.tgz#4b37664be59b88639f926c27a8ec1966d53866ca"
+  integrity sha512-7eVWMCzN0Mg5JXP8fA0YHiX4NfmCR5O0FHtxVQ0oqzkyEMik0EIlOiXw/grnk4MuA3/+RBaYM8nZD6kZotCXNw==
   dependencies:
-    "@xyflow/system" "0.0.37"
+    "@xyflow/system" "0.0.41"
     classcat "^5.0.3"
     zustand "^4.4.0"
 
-"@xyflow/system@0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@xyflow/system/-/system-0.0.37.tgz#eb656be8a5b6aa29dfb456ce4859454437b47a34"
-  integrity sha512-hSIhezhxgftPUpC+xiQVIorcRILZUOWlLjpYPTyGWRu8s4RJvM4GqvrsFmD5OnMKXLgpU7/PqqUibDVO67oWQQ==
+"@xyflow/system@0.0.41":
+  version "0.0.41"
+  resolved "https://registry.yarnpkg.com/@xyflow/system/-/system-0.0.41.tgz#6c314b2bbca594aec4d7cdb56efb003be6727d21"
+  integrity sha512-XAjs8AUA0YMfYD91cT6pLGALwbsPS64s2WBHyULqL1m0gTqXqaUSLK1P7qA/Q8HecN0RFbqlM2tPO8bmZXP0YQ==
   dependencies:
     "@types/d3-drag" "^3.0.7"
     "@types/d3-selection" "^3.0.10"
